@@ -1,68 +1,167 @@
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     height: 100%;
     margin: 0;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
     display: flex;
     justify-content:flex-end ;
-    width: auto;
-    height: auto;
+    height: 48px;
     padding: 6px;
-    border: 1px solid blue;
-
+    align-items: center;
+    margin-bottom: 0
 }
 
-main{
+.buttonHeader {
+    border: 0;
+    background-color: transparent;
+}
+
+.buttonHeader:hover {
+    border-bottom: 1px solid black;
+}
+
+#imageAppSymbolContainer{
+    margin: 13px;
+}
+
+#imageProfileContainer{
+    margin: 13px;
+}
+
+
+#imageAppSymbol {
+    height: 16px;
+    width: 16px;
+}
+
+#imageProfile{
+    height: 33px;
+    width: 33px;
+    border-radius: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 640px;
+    align-items: center;
+    margin: 0px;
+}
+
+#input-search{
+    border-radius: 51px;
+    height: 48px;
+    width: 584px;
+    margin: 20px;
+    border: 1px solid #DADCE0;
+    outline: none;
+}
+
+#input-search:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.116);
+}
+
+.lucky {
+    position: absolute;
+    top: 29.5%;
+    right: 935px;
+    height: 20px;
+    width: 20px;
+    opacity: 0.4;
+}
+
+.cameraIcon{
+    position: absolute;
+    top: 29%;
+    right: 405px;
+    height: 24px;
+    width: 24px;
+}
+
+.microIcon{
+    position: absolute;
+    top: 29%;
+    right: 445px;
+    height: 24px;
+    width: 24px;
+}
+
+
+.buttonMainContainer{
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 200px;
+    flex-direction: row;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
 }
 
-footer{
+.buttonMain{
+    border: none;
+    background-color: #F8F9FA;
+    margin: 11px 7px;
+    padding: 0px 16px;
+    height: 36px;
+    border-radius: 5px;
+}
+
+.buttonMain:hover{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+#sectionOne {
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
+    align-items: center;
+}
+
+#sectionTwo{
+    font-size: 13px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(242,242,242);
 }
 
-/* .botonesHeader{
-    font-size: 13px;
-    font-family: Arial, sans-serif;
-} */
-
 #sectionOneFooter{
     display: flex;
-    padding-left: 15px;
+    padding-left: 20px;
     font-family: Arial, sans-serif;
+    color: gray;
+    border-bottom: 1px solid #DADCE0;
 }
 
 #sectionTwoFooter{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px;
     font-family: Arial, sans-serif;
-}
-
-#iniciarSesion{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .buttonFooter {
-    border: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: grey;
+    padding: 15px;
 }
 
+.buttonFooter:hover {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1px;
+}
 
